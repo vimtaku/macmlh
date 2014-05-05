@@ -18,6 +18,9 @@
 		04A02815191737FF002568A3 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04A027F4191737FE002568A3 /* Cocoa.framework */; };
 		04A0281D191737FF002568A3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 04A0281B191737FF002568A3 /* InfoPlist.strings */; };
 		04A0281F191737FF002568A3 /* macmlhTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A0281E191737FF002568A3 /* macmlhTests.m */; };
+		04A0282919173882002568A3 /* InputMethodKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04A0282819173882002568A3 /* InputMethodKit.framework */; };
+		04A0282C19173946002568A3 /* nine.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 04A0282B19173946002568A3 /* nine.tiff */; };
+		04A0283019173AA9002568A3 /* MacMlhController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A0282F19173AA9002568A3 /* MacMlhController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +53,10 @@
 		04A0281A191737FF002568A3 /* macmlhTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "macmlhTests-Info.plist"; sourceTree = "<group>"; };
 		04A0281C191737FF002568A3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		04A0281E191737FF002568A3 /* macmlhTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = macmlhTests.m; sourceTree = "<group>"; };
+		04A0282819173882002568A3 /* InputMethodKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = InputMethodKit.framework; path = System/Library/Frameworks/InputMethodKit.framework; sourceTree = SDKROOT; };
+		04A0282B19173946002568A3 /* nine.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = nine.tiff; sourceTree = "<group>"; };
+		04A0282E19173AA9002568A3 /* MacMlhController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MacMlhController.h; sourceTree = "<group>"; };
+		04A0282F19173AA9002568A3 /* MacMlhController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MacMlhController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04A0282919173882002568A3 /* InputMethodKit.framework in Frameworks */,
 				04A027F5191737FE002568A3 /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -95,6 +103,7 @@
 		04A027F3191737FE002568A3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				04A0282819173882002568A3 /* InputMethodKit.framework */,
 				04A027F4191737FE002568A3 /* Cocoa.framework */,
 				04A02813191737FF002568A3 /* XCTest.framework */,
 				04A027F6191737FE002568A3 /* Other Frameworks */,
@@ -115,6 +124,8 @@
 		04A027FA191737FE002568A3 /* macmlh */ = {
 			isa = PBXGroup;
 			children = (
+				04A0282D19173A79002568A3 /* Classes */,
+				04A0282A19173924002568A3 /* Resources */,
 				04A02806191737FE002568A3 /* AppDelegate.h */,
 				04A02807191737FE002568A3 /* AppDelegate.m */,
 				04A02809191737FE002568A3 /* MainMenu.xib */,
@@ -152,6 +163,23 @@
 				04A0281B191737FF002568A3 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		04A0282A19173924002568A3 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				04A0282B19173946002568A3 /* nine.tiff */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		04A0282D19173A79002568A3 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				04A0282E19173AA9002568A3 /* MacMlhController.h */,
+				04A0282F19173AA9002568A3 /* MacMlhController.m */,
+			);
+			name = Classes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,6 +261,7 @@
 				04A027FF191737FE002568A3 /* InfoPlist.strings in Resources */,
 				04A0280D191737FE002568A3 /* Images.xcassets in Resources */,
 				04A02805191737FE002568A3 /* Credits.rtf in Resources */,
+				04A0282C19173946002568A3 /* nine.tiff in Resources */,
 				04A0280B191737FE002568A3 /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -252,6 +281,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04A0283019173AA9002568A3 /* MacMlhController.m in Sources */,
 				04A02808191737FE002568A3 /* AppDelegate.m in Sources */,
 				04A02801191737FE002568A3 /* main.m in Sources */,
 			);
