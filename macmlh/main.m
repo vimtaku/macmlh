@@ -12,11 +12,13 @@
 const NSString* kConnectionName = @"MacMlh_Connection";
 
 IMKServer*       server;
+IMKCandidates*		candidates = nil;
+
 
 
 int main(int argc, const char * argv[])
 {
-    
+
     NSString*       identifier;
     NSLog(@"holly fucking shit");
 	
@@ -24,6 +26,9 @@ int main(int argc, const char * argv[])
     identifier = [[NSBundle mainBundle] bundleIdentifier];
     server = [[IMKServer alloc] initWithName:(NSString*)kConnectionName bundleIdentifier:[[NSBundle mainBundle] bundleIdentifier]];
 	
+    //create the candidate window
+	candidates = [[IMKCandidates alloc] initWithServer:server panelType:kIMKSingleColumnScrollingCandidatePanel];
+    
     //load the bundle explicitly because in this case the input method is a background only application
 	[NSBundle loadNibNamed:@"MainMenu" owner:[NSApplication sharedApplication]];
 	

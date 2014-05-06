@@ -40,6 +40,7 @@
 	<string>nine.tiff</string>
 	<key>tsInputMethodCharacterRepertoireKey</key>
 	<array>
+		<string>Hira</string>
 		<string>Latn</string>
 	</array>
 </dict>
